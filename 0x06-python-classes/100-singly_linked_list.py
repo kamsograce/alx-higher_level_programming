@@ -36,6 +36,7 @@ class Node:
             raise TypeError("next_node must be a Node object")
         self.__next_node = value
 
+
 class SinglyLinkedList:
     """Represent a singly-linked list."""
 
@@ -64,7 +65,6 @@ class SinglyLinkedList:
                 tmp = tmp.next_node
             new.next_node = tmp.next_node
             tmp.next_node = new
-
 
     def __str__(self):
         """Define the print() representation of a SinglyLinkedList."""
